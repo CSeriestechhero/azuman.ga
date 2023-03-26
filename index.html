@@ -1,2 +1,383 @@
-LETTUCE COBBLER TWINKIE OWNS THIS FUCKING DOMAIN !!!! GRRRRRRRRR!!!!!
-for Azucord
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cseriestechhero.github.io/kiosk-setup/services/redir/basepage8_1/jquery-1.12.4.js"></script>
+	<script src="https://cseriestechhero.github.io/kiosk-setup/services/redir/basepage8_1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>The Azumanga Daioh Website (unofficial)</title>
+    <style>
+
+    </style>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script><script>
+    function aFunction() {
+      var x = document.getElementById("appdiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script><script>
+    function bFunction() {
+      var x = document.getElementById("ifr1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script><script>
+    function cFunction() {
+      var x = document.getElementById("ifr2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script><script>
+    function dFunction() {
+      var x = document.getElementById("ifr3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script><script>
+    function eFunction() {
+      var x = document.getElementById("ifr4");
+    
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function start(){
+    aFunction();
+    bFunction();
+    cFunction();
+    dFunction();
+    eFunction();
+    myFunction();
+    }
+    </script>
+    <script type="text/javascript">
+        var defaultImage = "http://...";
+        document.getElementsByTagName('body')[0].style.backgroundImage = localStorage.getItem('back') ? "url('"+localStorage.getItem('back')+"')" : "url('"+defaultImage+"')";
+      function changebackground(){
+          var url =  document.getElementById('bgchanger').value;
+          document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + url + "')";
+          localStorage.setItem('back',url);
+        }
+    </script>
+    <script type="text/javascript">
+      function clock() {
+        var now = new Date();
+        var TwentyFourHour = now.getHours();
+        var hour = now.getHours();
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+        var mid = 'pm';
+        if (min < 10) {
+          min = "0" + min;
+        }
+        if (hour > 12) {
+          hour = hour - 12;
+        }
+        if (hour == 0) {
+          hour = 12;
+        }
+        if (TwentyFourHour < 12) {
+          mid = 'am';
+        }
+        document.getElementById('currentTime').innerHTML = hour + ':' + min + ' ' + mid;
+        setTimeout(clock, 1000);
+      }
+    
+    
+    
+    </script>  
+    <script>
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("appdiv"));
+        
+        function dragElement(elmnt) {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+          if (document.getElementById(elmnt.id + "header")) {
+            /* if present, the header is where you move the DIV from:*/
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+          } else {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+          }
+        
+          function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+          }
+        
+          function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+          }
+        
+          function closeDragElement() {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+          }
+        }
+        </script>
+        <script>function launch_toast() {
+            var x = document.getElementById("toast")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+        
+        }</script>
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+            </script>
+            <script>(function() {
+                'use strict';
+              
+                var battery;
+              
+                function toTime(sec) {
+                  sec = parseInt(sec, 10);
+              
+                  var hours = Math.floor(sec / 3600),
+                      minutes = Math.floor((sec - (hours * 3600)) / 60),
+                      seconds = sec - (hours * 3600) - (minutes * 60);
+              
+                  if (hours < 10) { hours   = '0' + hours; }
+                  if (minutes < 10) { minutes = '0' + minutes; }
+                  if (seconds < 10) { seconds = '0' + seconds; }
+              
+                  return hours + ':' + minutes;
+                }
+              
+                function readBattery(b) {
+                  battery = b || battery;
+              
+                  var percentage = parseFloat((battery.level * 100).toFixed(2)) + '%',
+                      fully,
+                      remaining;
+              
+                  if (battery.charging && battery.chargingTime === Infinity) {
+                    fully = 'Calculating...';
+                  } else if (battery.chargingTime !== Infinity) {
+                    fully = toTime(battery.chargingTime);
+                  } else {
+                    fully = '---';
+                  }
+              
+                  if (!battery.charging && battery.dischargingTime === Infinity) {
+                    remaining = 'Calculating...';
+                  } else if (battery.dischargingTime !== Infinity) {
+                    remaining = toTime(battery.dischargingTime);
+                  } else {
+                    remaining = '---';
+                  }
+              
+                  document.styleSheets[0].insertRule('.battery:before{width:' + percentage + '}', 0);
+                  document.querySelector('.battery-percentage').innerHTML = percentage;
+                  document.querySelector('.battery-status').innerHTML = battery.charging ? 'Adapter' : 'Battery';
+                  document.querySelector('.battery-level').innerHTML = percentage;
+                  document.querySelector('.battery-fully').innerHTML = fully;
+                  document.querySelector('.battery-remaining').innerHTML = remaining;
+              
+                }
+              
+                if (navigator.battery) {
+                  readBattery(navigator.battery);
+              
+                } else if (navigator.getBattery) {
+                  navigator.getBattery().then(readBattery);
+              
+                } else {
+                  document.querySelector('.not-support').removeAttribute('hidden');
+                }
+              
+                window.onload = function () {
+                  battery.addEventListener('chargingchange', function() {
+                    readBattery();
+                  });
+              
+                  battery.addEventListener("levelchange", function() {
+                    readBattery();
+                  });
+                };
+              }());</script><script>
+              function fullScreen() {
+                  var el = document.documentElement
+                  , rfs = // for newer Webkit and Firefox
+                     el.requestFullScreen
+                  || el.webkitRequestFullScreen
+                  || el.mozRequestFullScreen
+                  || el.msRequestFullScreen
+                  ;
+              
+                  if(typeof rfs!="undefined" && rfs){
+              
+                      rfs.call(el);
+              
+                  } else if(typeof window.ActiveXObject!="undefined"){
+              
+                      // for Internet Explorer
+                      var wscript = new ActiveXObject("WScript.Shell");
+              
+                      if (wscript!=null) {
+                        wscript.SendKeys("{F11}");
+                      }
+                  }
+              
+              }
+              </script>
+              <script type="text/javascript">
+                var defaultImage = "http://...";
+                document.getElementsByTagName('body')[0].style.backgroundImage = localStorage.getItem('back') ? "url('"+localStorage.getItem('back')+"')" : "url('"+defaultImage+"')";
+              function changebackground(){
+                  var url =  document.getElementById('bgchanger').value;
+                  document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + url + "')";
+                  localStorage.setItem('back',url);
+                }
+            </script>
+            <script type="text/javascript">
+              function clock() {
+                var now = new Date();
+                var TwentyFourHour = now.getHours();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+                var mid = 'pm';
+                if (min < 10) {
+                  min = "0" + min;
+                }
+                if (hour > 12) {
+                  hour = hour - 12;
+                }
+                if (hour == 0) {
+                  hour = 12;
+                }
+                if (TwentyFourHour < 12) {
+                  mid = 'am';
+                }
+                document.getElementById('currentTime').innerHTML = hour + ':' + min + ' ' + mid;
+                setTimeout(clock, 1000);
+              }
+            
+            
+            
+            </script>  
+
+<script>
+    //Make the DIV element draggagle:
+    dragElement(document.getElementById("appdiv"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        /* if present, the header is where you move the DIV from:*/
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        /* otherwise, move the DIV from anywhere inside the DIV:*/
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        /* stop moving when mouse button is released:*/
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+    </script>
+</head>
+<body  id="body" onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); fullScreen(); clock();">
+<h1 class="az">Azumanga Daioh</h1><br>
+<p class="az">the Website<br><br>WARNING: THIS PAGE IS IN EARLY DEVELOPMENT. ALL IDEAL FEATURES ARE YET TO HAVE BEEN RELEASED.<BR><BR><sub>(c) 2023, LCTapps & Azuland [we do not own azumanga daioh, this page is made by fans]</sub></p>
+<div style="z-index:30;"id="myNav" class="overlay">
+    <p style="top:5px;padding:3px 10px; background-color:black;border-radius:100px;" class="app_title">Contact LCTapps</p>
+      <a style="padding: 4px 4px;height:2%px;background-color:black;border-radius:100px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSvCRie2uxs17LDmNbISX7BT0PpPFAc6BsgKxWP6JwsI-PEA/viewform?embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+    </div>
+    
+    
+<iframe id="ifr1" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
+<iframe id="ifr2" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
+<iframe id="ifr3" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
+<iframe id="ifr4" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/LCTsearch"></iframe>
+<div id="myDIV" class="navbar">  
+    <a style="font-weight: 900;font-size: 14; padding: 8px 13px;" onclick="openNav()">◯</a>
+     <div style="padding: 0px 45vw;">
+   <button style="" type="button"  onclick="bFunction()" >1</button></div>
+   <button style="" type="button"  onclick="cFunction()" >2</button>
+   <button style="" type="button"  onclick="dFunction()" >3</button>
+   <button style="" type="button"  onclick="eFunction()" >4</button>
+   
+   <button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button>
+   
+   </div><button class="showbtn" style="position: fixed; right: 0; bottom:0;" onclick="myFunction()">˄</button>
+</body>
+</html>
