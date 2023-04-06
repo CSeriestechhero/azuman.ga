@@ -355,7 +355,9 @@
 <body  id="body" onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); fullScreen(); clock();">
 <h1 class="az">Azumanga Daioh</h1><br>
 <p class="az">the Website<br><br>WARNING: THIS PAGE IS IN EARLY DEVELOPMENT. ALL IDEAL FEATURES ARE YET TO HAVE BEEN RELEASED.<BR><BR><sub>(c) 2023, LCTapps & Azuland [we do not own azumanga daioh, this page is made by fans]</sub></p>
-<div style="z-index:30;"id="myNav" class="overlay">
+
+  
+  <div style="z-index:30;"id="myNav" class="overlay">
     <p style="top:5px;padding:3px 10px; background-color:black;border-radius:100px;" class="app_title">Contact LCTapps</p>
       <a style="padding: 4px 4px;height:2%px;background-color:black;border-radius:100px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -364,20 +366,32 @@
     </div>
     
     
-<iframe id="ifr1" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
+<iframe id="ifr1" style="position: fixed; width: 100%; height: 100%; border: none; display: block; top:0; bottom:0; left:0; right:0;" src="emb/listen.html"></iframe>
+<!--
 <iframe id="ifr2" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
 <iframe id="ifr3" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="browser"></iframe>
 <iframe id="ifr4" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/LCTsearch"></iframe>
+-->
 <div id="myDIV" class="navbar">  
-    <a style="font-weight: 900;font-size: 14; padding: 8px 13px;" onclick="openNav()">◯</a>
-     <div style="padding: 0px 45vw;">
-   <button style="" type="button"  onclick="bFunction()" >1</button></div>
-   <button style="" type="button"  onclick="cFunction()" >2</button>
-   <button style="" type="button"  onclick="dFunction()" >3</button>
-   <button style="" type="button"  onclick="eFunction()" >4</button>
-   
+    <a style="font-weight: 900;font-size: 14; padding: 8px 13px;" onclick="openNav()">Contact</a>
+     <div style="padding: 0px 39vw;">
+   <button style="" type="button"  onclick="bFunction()" >Listen</button></div>
+   <!--
+   <button style="" type="button"  onclick="cFunction()" >C</button>
+   <button style="" type="button"  onclick="dFunction()" >D</button>
+   <button style="" type="button"  onclick="eFunction()" >E</button> 
+  -->
+   <a href="emb/resources.html" class="active" target="nav">Resources</a>
+   <a href="emb/connect.html" target="nav">Connect</a>
+   <a href="daioh.html" target="_parent">Watch</a>
+   <!--
+   <a href="about:blank" target="nav">blanktarg1</a>
+  -->
    <button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button>
    
-   </div><button class="showbtn" style="position: fixed; right: 0; bottom:0;" onclick="myFunction()">˄</button>
+   </div><button class="showbtn" style="position: fixed; right: 0; bottom:0;z-index:99998;" onclick="myFunction()">˄</button>
+     <div class="main">
+    <iframe src="about:blank" name="nav" style="position: fixed; height: 100%; width: 100%; padding: none; left: 0; right: 0; top: 0; bottom: 0px; border: none; z-index: 1;"></p>
+  </div>
 </body>
 </html>
